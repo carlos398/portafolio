@@ -80,7 +80,19 @@ def impuestos():
         print("por tanto usted no debe tributar")
 
 
+"""
+    Los alumnos de un curso se han dividido en dos grupos A y B de acuerdo al sexo y el nombre. El grupo A esta formado por las mujeres con un nombre anterior a la M y los hombres con un nombre posterior a la N y el grupo B por el resto. Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pantalla el grupo que le corresponde.
+"""
+
+
+def grupos_curso():
+    genero = input("Cual es tu genero M = Masculino o F = Femenino: ")
+    nombre = input("Cual es tu nombre?: ")
+    if (genero == "M" and nombre.lower() > "n") or (genero == "F" and nombre.lower() < "m"):
+        print("Grupo A")
+    else:
+        print("Grupo B")
 
 
 if __name__ == '__main__':
-    impuestos()
+    grupos_curso()
