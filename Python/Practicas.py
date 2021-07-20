@@ -194,8 +194,29 @@ def sala_juegos():
 
 
 def pizzeria():
-    
+    pizza = int(input("Que tipo de pizza quiere\n 1 = Vegetariana\n 2 = No vegetariana\n"))
+    if pizza > 2 and pizza <1 :
+        print("Digite un tipo de pizza valido")
+    elif pizza == 1:
+        print("usted escogio pizza vegetariana ")
+        print(" los ingredientes disponibles son: ")
+        ingrediente = int(input(" pimiento digite 1 \n tofu digite 2\n "))
+        if ingrediente == 1:
+            print("su pizza es una vegetariana con pimiento")
+        elif ingrediente == 2:
+            print("su pizza es una vegetariana con tofu")
+    else:
+        print("usted escogio pizza de carnes")
+        print(" los ingredientes disponibles son: ")
+        ingrediente = int(input(" Peperoni digite 1 \n Jamón digite 2 \n Salmón digite 3\n"))
+        if ingrediente == 1:
+            print("su pizza es una de carnes con Peperoni")
+        elif ingrediente == 2:
+            print("su pizza es una de carnes con Jamón")
+        elif ingrediente == 3:
+            print("su pizza es una de carnes con Salmón")
+    return True
 
 
 if __name__ == '__main__':
-    Puntuacion()
+    pizzeria()
