@@ -55,7 +55,7 @@ def division():
 
 
 def par_impar():
-    numero = int(input('Por favor digite un numero para saber si es par o no: '))
+    numero = int(input("Por favor digite un numero para saber si es par o no: "))
     if numero % 2 != 0:
         print("el numero no es par")
     else:
@@ -71,8 +71,16 @@ def par_impar():
 
 
 def impuestos():
-    
+    edad = int(input("Por favor digite su edad: "))
+    ingresos = int(input("Por favor digite sus ingresos: "))
+    print("su edad es {edad} y sus ingresos son {ingresos}€".format(edad=edad, ingresos=ingresos))
+    if edad > 16 and ingresos >= 1000:
+        print("por tanto usted debe tributar")
+    else:
+        print("por tanto usted no debe tributar")
+
+
 
 
 if __name__ == '__main__':
-    pass
+    impuestos()
