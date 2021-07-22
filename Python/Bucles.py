@@ -8,7 +8,7 @@ def edades():
     anio = 2021 - edad
 
     for i in range(edad+1):
-        print('en el año {0} usted cumplio {edad}, '.format((anio+i), edad=i))
+        print("en el año {0} usted cumplio {edad}, ".format((anio+i), edad=i))
 
 
 
@@ -25,8 +25,28 @@ def impares():
         print("el numero debe ser entero positivo")
     for i in range(numero+1):
       if i%2:
-          print(i)
+          print(i, end=", ")
+
+
+
+"""
+    Escribir un programa que pida al usuario un número entero positivo 
+    y muestre por pantalla la cuenta atrás desde ese número hasta cero separados por comas.
+"""
+
+
+def cuenta_atras():
+    numero = int(input("Dogite un numero entero positivo: "))
+    if numero <=0 :
+        print("el numero debe ser entero positivo")
+    for i in range(numero+1):
+        print(" {0} ".format(numero - i), end=", ")
+
+
+"""
+    
+"""
 
 
 if __name__ == '__main__':
-    impares()
+    cuenta_atras()
