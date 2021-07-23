@@ -55,7 +55,7 @@ def inversiones():
     numero_años = int(input("numer de años para la inversion: "))
     for i in range(numero_años):
         cantidad *=  1 + interes_anual / 100
-        print(" la ganancia del año {año} es de {ganancia} ".format(año=i+1,ganancia=round(cantidad, 2)))
+        print(" la ganancia del año {año} es de {ganancia} ".format(año=i+1, ganancia=round(cantidad, 2)))
 
 
 if __name__ == '__main__':
