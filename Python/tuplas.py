@@ -6,4 +6,4 @@
 mi_tupla = (1,2,3,4,5)
 mi_tupla.append(5) #genera error
 for numero in mi_tupla:
-print (numero)
+    print(numero)
