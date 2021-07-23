@@ -58,5 +58,42 @@ def inversiones():
         print(" la ganancia del año {año} es de {ganancia} ".format(año=i+1, ganancia=round(cantidad, 2)))
 
 
+"""
+    Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo 
+    como el de más abajo, de altura el número introducido
+"""
+
+
+def triangulo():
+    tamaño = int(input("Digite el tamaño de su triangulo: "))
+    for i in range(tamaño):
+        print("*"*i)
+
+
+"""
+    Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10.
+"""
+
+
+def tabla():
+    for i in range(1,11):
+        for j in range(1,11):
+            print(" {0}".format((i*j)), end='\t')
+        print("")
+
+
+"""
+    Escribir un programa que pida al usuario un número entero y 
+    muestre por pantalla un triángulo rectángulo como el de más abajo.
+"""
+
+
+def triangulo_nums():
+    for i in range(1,11):
+        for j in range(1,11):
+            print(" {0}".format((i*j)), end='\t')
+        print("")
+
+
 if __name__ == '__main__':
-    inversiones()
+    triangulo()
