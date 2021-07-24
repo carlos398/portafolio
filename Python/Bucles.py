@@ -89,11 +89,13 @@ def tabla():
 
 
 def triangulo_nums():
-    for i in range(1,11):
-        for j in range(1,11):
-            print(" {0}".format((i*j)), end='\t')
-        print("")
-
+    tamaño = int(input("Digite el tamaño de su triangulo: "))
+    for i in range(tamaño):
+        if i%2:
+            for  j in range(i):
+                print(i,end=" ")
+        print("\n")
+        
 
 if __name__ == '__main__':
-    triangulo()
+    triangulo_nums()
