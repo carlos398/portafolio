@@ -90,11 +90,10 @@ def tabla():
 
 def triangulo_nums():
     tamaño = int(input("Digite el tamaño de su triangulo: "))
-    for i in range(tamaño):
-        if i%2:
-            for  j in range(i):
-                print(i,end=" ")
-        print("\n")
+    for i in range(1, tamaño+1, 2):
+        for j in range(i, 0, -2):
+            print(j, end=" ")
+        print("")
         
 
 if __name__ == '__main__':
