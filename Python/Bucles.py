@@ -94,7 +94,13 @@ def triangulo_nums():
         for j in range(i, 0, -2):
             print(j, end=" ")
         print("")
-        
+
+
+"""
+    Escribir un programa que almacene la cadena de caracteres contraseña en una variable, 
+    pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta.
+"""
+
 
 if __name__ == '__main__':
     triangulo_nums()
