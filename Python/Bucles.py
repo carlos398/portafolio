@@ -102,5 +102,13 @@ def triangulo_nums():
 """
 
 
+def contrasena():
+    contrasena = input("Digite su contraseña por favor")
+    contra = input("Digite nuevamente la contraseña")
+    while contra != contrasena:
+        contra = input("Digite nuevamente la contraseña")
+    return contra
+
+
 if __name__ == '__main__':
-    triangulo_nums()
+    contrasena()
