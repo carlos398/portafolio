@@ -1,6 +1,6 @@
-##Titulo segun la cantidad es el h del titulo
+## Titulo segun la cantidad es el h del titulo
 
->esti es una cita
->esto es otra
+> esti es una cita
+> esto es otra
 
--lista desordenada
+- lista desordenada
