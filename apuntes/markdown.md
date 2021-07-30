@@ -9,3 +9,8 @@
 - lo mismo pero 3
     - sub lista
     - sub lista
+
+texto *italico*
+
+texto en **negrita**
+
