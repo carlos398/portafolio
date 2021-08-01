@@ -27,3 +27,5 @@
 Sí, puedes instalar una versión distinta directo en tu sistema, continuar con el curso (quizá lo termines sin problemas) y pretender que no ha sucedido nada. Sin embargo cuando instalas una versión de Python directo al sistema operativa esta funcionará de forma global y lo mismo con los módulos que instales a través de pip (a no ser que uses un entorno virtual).
 
 Cuando instales paquetes de forma global en cada versión de Python en tu sistema, es probable que estos lleguen a ser de versiones distintas y es aquí cuando los problemas se pueden presentar. Por ello es mejor tener cada cosa en su lugar, separada y sin afectar otros entornos.
+
+## 
