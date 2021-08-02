@@ -37,18 +37,20 @@ def get_birthday():
 def get_age(nacimiento):
     """
     Calculate date
-    :param nacimiento: Int, year of bith, Ie. 1994
-    :return: 27
+    :param nacimiento: Int, date of birth dd/mm/yyyy, Ie. '22/06/1994'
+    :return: 27 years
     """
 
     fechaActual = datetime.datetime.now()
     fechaActual2 = datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
     fechaActual2 = str(fechaActual2[-4:])
-    edad = int(fechaActual2) - nacimiento
+    edad = int(fechaActual2) - int(nacimiento[-4:])
 
-    return edad
+    return '{} years'.format(edad)
 
 
 if __name__ == '__main__':
     nacimiento = get_birthday()
-    print('nacimiento', nacimiento)
+    print('birthday', nacimiento)
+    age = get_age(nacimiento)
+    print('you age is: {age}'.format(age=age))
