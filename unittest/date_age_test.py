@@ -16,9 +16,31 @@ class TestAge(unittest.TestCase):
         """
         Validate to age is 21
         """
+        friends = {
+            'mac': {
+                'age': 27,
+                'birthday': '31/08/1993',
+            },
+            'carlos': {
+                'age': 20,
+                'birthday': '02/06/2000',
+            },
+            'yurley': {
+                'age': 27,
+                'birthday': '22/06/1994',
+            },
+            'reyez': {
+                'age': 26,
+                'birthday': '21/09/1994',
+            }
+        }
 
-        age = get_age('31/08/1993')
-        self.assertEqual(age, '28 years')
+        for key, values in friends.iteritems():
+            birthday = values['birthday']
+            base_age = values['age']
+            age = get_age(birthday)
+
+            self.assertEqual(age, '{} years'.format(base_age))
 
 
     def test_validate_patters(self):
