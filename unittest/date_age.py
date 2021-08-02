@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import datetime
+from dateutil import relativedelta as rdelta
 
 
 def validate_patter(date_text, patter):
@@ -42,9 +43,9 @@ def get_age(birthday):
     """
 
     date_now = datetime.datetime.now()
-    date_now_str = datetime.datetime.strftime(date_now, '%d/%m/%Y')
-    year = str(date_now_str[-4:])
-    age = int(year) - int(birthday[-4:])
+    date_birthday = datetime.datetime.strptime(birthday, '%d/%m/%Y')
+    rd = rdelta.relativedelta(date_now, date_birthday)
+    age = rd.years
 
     return '{age} years'.format(age=age)
 
