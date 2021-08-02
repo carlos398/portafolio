@@ -59,8 +59,13 @@ def get_age(birthday):
     if month_birthday > month_now:
         # TODO: what happen if date is  05/08/2000 is the same month ...
         age = age - 1
+    elif month_birthday == month_now and day_birthday > day_now:
+        age = age - 1
 
     return '{age} years'.format(age=age)
+        
+
+    
 
 
 if __name__ == '__main__':
