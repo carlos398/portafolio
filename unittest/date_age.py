@@ -43,18 +43,21 @@ def get_age(birthday):
 
     date_now = datetime.datetime.now()
     date_now_str = datetime.datetime.strftime(date_now, '%d/%m/%Y')
-    year = str(date_now_str[-4:])
-    mont_birthday = str(birthday[3:5])
-    day_birthday  = str(birthday[0:2])
 
-    mont_year = str(date_now_str[3:5])
-    day_year = str(date_now_str[0:2])
+    date_now_list = date_now_str.split('/')
+    day_now = int(date_now_list[0])
+    month_now = int(date_now_list[1])
+    year_now = int(date_now_list[2])
 
-    age = int(year) - int(birthday[-4:])
+    birthday_list = birthday.split('/')
+    day_birthday = int(birthday_list[0])
+    month_birthday = int(birthday_list[1])
+    year_birthday = int(birthday_list[2])
 
-    if int(mont_birthday) > int(mont_year):
-        age = age - 1
-    elif int(day_birthday) > int(day_year) and int(mont_birthday) > int(mont_year):
+    age = year_now - year_birthday
+
+    if month_birthday > month_now:
+        # TODO: what happen if date is  05/08/2000 is the same month ...
         age = age - 1
 
     return '{age} years'.format(age=age)
