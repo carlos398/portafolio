@@ -44,7 +44,18 @@ def get_age(birthday):
     date_now = datetime.datetime.now()
     date_now_str = datetime.datetime.strftime(date_now, '%d/%m/%Y')
     year = str(date_now_str[-4:])
+    mont_birthday = str(birthday[3:5])
+    day_birthday  = str(birthday[0:2])
+
+    mont_year = str(date_now_str[3:5])
+    day_year = str(date_now_str[0:2])
+
     age = int(year) - int(birthday[-4:])
+
+    if int(mont_birthday) > int(mont_year):
+        age = age - 1
+    elif int(day_birthday) > int(day_year) and int(mont_birthday) > int(mont_year):
+        age = age - 1
 
     return '{age} years'.format(age=age)
 
