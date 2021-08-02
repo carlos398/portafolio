@@ -17,8 +17,8 @@ class TestAge(unittest.TestCase):
         Validate to age is 21
         """
 
-        age = get_age(1993)
-        self.assertEqual(age, 28)
+        age = get_age('31/08/1993')
+        self.assertEqual(age, '28 years')
 
 
     def test_validate_patters(self):

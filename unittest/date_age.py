@@ -37,7 +37,7 @@ def get_birthday():
 def get_age(nacimiento):
     """
     Calculate date
-    :param nacimiento: Int, date of birth dd/mm/yyyy, Ie. '22/06/1994'
+    :param nacimiento: String, date of birth dd/mm/yyyy, Ie. '22/06/1994'
     :return: 27 years
     """
 
