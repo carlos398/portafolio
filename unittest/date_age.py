@@ -43,8 +43,22 @@ def get_age(birthday):
 
     date_now = datetime.datetime.now()
     date_now_str = datetime.datetime.strftime(date_now, '%d/%m/%Y')
-    year = str(date_now_str[-4:])
-    age = int(year) - int(birthday[-4:])
+
+    date_now_list = date_now_str.split('/')
+    day_now = int(date_now_list[0])
+    month_now = int(date_now_list[1])
+    year_now = int(date_now_list[2])
+
+    birthday_list = birthday.split('/')
+    day_birthday = int(birthday_list[0])
+    month_birthday = int(birthday_list[1])
+    year_birthday = int(birthday_list[2])
+
+    age = year_now - year_birthday
+
+    if month_birthday > month_now or \
+        (month_birthday == month_now and day_birthday > day_now):
+        age = age - 1
 
     return '{age} years'.format(age=age)
 
