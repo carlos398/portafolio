@@ -113,6 +113,7 @@ def get_format_date(segment, nomenclatures):
     :param nomenclatures: Tuple of String define piece of nomeclature Ie, (year, years)
     :return: String message Ie, '14 years 4 months 7 days '
     """
+
     message = ''
     if segment != 0:
         nomenclature = nomenclatures[1]
