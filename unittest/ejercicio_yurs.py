@@ -22,6 +22,10 @@ users = [
     {'name': 'manolo', 'birthday': '1997-01-26' }
 ]
 
+YEAR = ('year', 'years')
+MONTH = ('month', 'months')
+DAY = ('day', 'days')
+
 
 def order_by_age(persons):
     """
@@ -82,43 +86,43 @@ def age_diff():
                 person_name=person_name,
                 other_person_name=other_person_name
             ))
-            imprime_diferencias(rd)
+            print_diff(rd)
 
 
-def imprime_diferencias(rd):
-    mensaje_para_imprimir = ''
-    if rd.years != 0:
-        nomeclatura = 'years'
-        if abs(rd.years) == 1:
-            nomeclatura = 'year'
-        mensaje_para_imprimir = '{} {} {} '.format(
-            mensaje_para_imprimir,
-            abs(rd.years),
-            nomeclatura
+def print_diff(rd):
+    """
+    Show difference values form relative date
+    :param rd:  Obj Relative Ie, <1 years, 2 months, 4 days>
+    :return:  7 years 5 months 6 days
+    """
+
+    msj_year = get_format_date(rd.years, YEAR)
+    msj_month = get_format_date(rd.months, MONTH)
+    msj_day = get_format_date(rd.days, DAY)
+    message = '{}{}{}'.format(msj_year, msj_month, msj_day)
+
+    print(message)
+
+    return message
+
+
+def get_format_date(segment, nomenclatures):
+    """
+    Define structure to show segment of date
+    :param segment: Number of secgment date (years, month or day) Ie, 12
+    :param nomenclatures: Tuple of String define piece of nomeclature Ie, (year, years)
+    :return: String message Ie, '14 years 4 months 7 days '
+    """
+    message = ''
+    if segment != 0:
+        nomenclature = nomenclatures[1]
+        if abs(segment) == 1:
+            nomenclature = nomenclatures[0]
+        message = '{} {} '.format(
+            abs(segment),
+            nomenclature
         )
-
-    if rd.months != 0:
-        nomeclatura = 'months'
-        if abs(rd.months) == 1:
-            nomeclatura = 'month'
-        mensaje_para_imprimir = '{} {} {} '.format(
-            mensaje_para_imprimir,
-            abs(rd.months),
-            nomeclatura
-        )
-
-    if rd.days != 0:
-        nomeclatura = 'days'
-        if abs(rd.days) == 1:
-            nomeclatura = 'day'
-        mensaje_para_imprimir = '{} {} {} '.format(
-            mensaje_para_imprimir,
-            abs(rd.days),
-            nomeclatura
-        )
-
-    print(mensaje_para_imprimir)
-
+    return message
 
 
 if __name__ == "__main__":

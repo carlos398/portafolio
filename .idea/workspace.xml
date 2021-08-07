@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ccde46d-40e8-443d-9f60-7226a1d09d25" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittest/ejercicio_yurs.py" beforeDir="false" afterPath="$PROJECT_DIR$/unittest/ejercicio_yurs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627862038027</updated>
       <workItem from="1627862039403" duration="8489000" />
-      <workItem from="1628302866528" duration="1338000" />
+      <workItem from="1628302866528" duration="2813000" />
     </task>
     <servers />
   </component>
@@ -167,6 +168,11 @@
           <line>23</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/unittest/ejercicio_yurs.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -181,6 +187,6 @@
     <SUITE FILE_PATH="coverage/portafolio$Unittests_for_date_age_test_TestAge_test_get_age.coverage" NAME="Unittests for date_age_test.TestAge.test_get_age Coverage Results" MODIFIED="1627869315165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest" />
     <SUITE FILE_PATH="coverage/portafolio$Unittests_for_unittest_edad_TestEdad_test_edad.coverage" NAME="Unittests for unittest_edad.TestEdad.test_edad Coverage Results" MODIFIED="1627863173087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest" />
     <SUITE FILE_PATH="coverage/portafolio$Unittests_for_edad_test_TestEdad.coverage" NAME="Unittests for edad_test.TestEdad Coverage Results" MODIFIED="1627863411210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest" />
-    <SUITE FILE_PATH="coverage/portafolio$ejercicio_yurs.coverage" NAME="ejercicio_yurs Coverage Results" MODIFIED="1628304175074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest" />
+    <SUITE FILE_PATH="coverage/portafolio$ejercicio_yurs.coverage" NAME="ejercicio_yurs Coverage Results" MODIFIED="1628305489139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest" />
   </component>
 </project>
