@@ -70,7 +70,7 @@ def other_person_birthd(other_person):
 
     parameters:
 
-    person: will be the iterator through which we will go through the list.
+    other_person: will be the iterator through which we will go through the list.
 
     returns:
 
