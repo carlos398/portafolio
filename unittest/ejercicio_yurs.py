@@ -94,15 +94,12 @@ def age_dif():
     """
     for person in persons:
         person_birthday, person_name = person_birthd(person)
+        print('*'*50,' {person_name} '.format(person_name=person_name),'*'*50)
         for other_person in persons:
             other_person_birthday, other_person_name = other_person_birthd(other_person)
-            rd = rdelta.relativedelta(person_birthday, other_person_birthday)
-            dif = rd.years
-            print("the diference betwen {name_person} and {other_person_name} is {dif}".format(
-                name_person=person_name, 
-                dif=dif, 
-                other_person_name=other_person_name
-            ))
+            rd = rdelta.relativedelta(person_birthday,other_person_birthday)
+            print("the diference between {person_name} and {other_person_name} is: ".format(person_name=person_name, other_person_name=other_person_name))
+            print('{0.years} years, {0.months} months and {0.days} days'.format(abs(rd)))
     return None    
     
 if __name__ == "__main__":
