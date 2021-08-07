@@ -87,10 +87,14 @@ def other_person_birthd(other_person):
 
 def age_dif():
     """
+    
+    
     this function we are going to iterate in the dictionary people
     to look for first inside our function person_birthd the name and the date of birth of each person,
     then we will iterate again to compare one by one with each one of the people in the list,
     this with the motive to find the difference of time between one and the other. 
+    
+    
     """
     for person in persons:
         person_birthday, person_name = person_birthd(person)
@@ -104,6 +108,7 @@ def age_dif():
             else:
                 print('{0.years} year, {0.months} months and {0.days} days'.format(abs(rd)))
     return None    
+    
     
 if __name__ == "__main__":
     age_dif()
