@@ -28,7 +28,7 @@ MONTH = ('month', 'months')
 DAY = ('day', 'days')
 
 
-def order_by_age(persons):
+def order_by_age(users):
     """
     This function takes the dates and sorts them
     from oldest to youngest according to the age of the person.
@@ -37,12 +37,12 @@ def order_by_age(persons):
     persons sorted
     """
 
-    persons.sort(key=lambda p: p['birthday'], reverse=True)
+    users.sort(key=lambda p: p['birthday'], reverse=True)
 
-    for i in persons:
+    for i in users:
         print(i)
 
-    return persons
+    return users
 
 
 def get_birth_and_name(person):
@@ -121,4 +121,4 @@ def get_format_date(segment, nomenclatures):
 
 
 if __name__ == "__main__":
-    age_diff()
+    order_by_age(users)
