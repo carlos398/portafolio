@@ -1,3 +1,4 @@
+ 
 #!/usr/bin/myvenv python
 # -*- coding: utf-8 -*-
 
@@ -31,9 +32,7 @@ def order_by_age(persons):
     """
     This function takes the dates and sorts them
     from oldest to youngest according to the age of the person.
-
     param persons: is the dictionary on line 15
-
     returns
     persons sorted
     """
@@ -49,13 +48,9 @@ def order_by_age(persons):
 def get_birth_and_name(person):
     """
     This function will help us to find the name and date of birth of each person.
-
     parameters:
-
     other_person: will be the iterator through which we will go through the list.
-
     returns:
-
     other_person_birthday : date of birth of the person
     other_person_name : name of the person
     """
@@ -108,37 +103,11 @@ def print_diff(rd):
 
 def get_format_date(segment, nomenclatures):
     """
-<<<<<<< HEAD
-    
-    
-    this function we are going to iterate in the dictionary people
-    to look for first inside our function person_birthd the name and the date of birth of each person,
-    then we will iterate again to compare one by one with each one of the people in the list,
-    this with the motive to find the difference of time between one and the other. 
-    
-    
-    """
-    for person in persons:
-        person_birthday, person_name = person_birthd(person)
-        print('*'*50,' {person_name} '.format(person_name=person_name),'*'*50)
-        for other_person in persons:
-            other_person_birthday, other_person_name = other_person_birthd(other_person)
-            rd = rdelta.relativedelta(person_birthday,other_person_birthday)
-            print("the diference between {person_name} and {other_person_name} is: ".format(person_name=person_name, other_person_name=other_person_name))
-            if rd.years > 1:
-                print('{0.years} years, {0.months} months and {0.days} days'.format(abs(rd)))
-            else:
-                print('{0.years} year, {0.months} months and {0.days} days'.format(abs(rd)))
-    return None    
-    
-    
-=======
     Define structure to show segment of date
     :param segment: Number of secgment date (years, month or day) Ie, 12
     :param nomenclatures: Tuple of String define piece of nomeclature Ie, (year, years)
     :return: String message Ie, '14 years 4 months 7 days '
     """
-
     message = ''
     if segment != 0:
         nomenclature = nomenclatures[1]
@@ -151,6 +120,5 @@ def get_format_date(segment, nomenclatures):
     return message
 
 
->>>>>>> 3b5f4bca59da01d1a9e1c4ecca5e3de7808597a4
 if __name__ == "__main__":
     age_diff()
